@@ -1,51 +1,73 @@
 // import React from 'react';
+// import ReactDOM from 'react-dom';
+// /*container for all boxes*/
+// let mainBoxStyle = {
+//   width:"615px",
+//   height:"100px",
+//   border: "2px solid #bfbcbc54",
+//   backgroundColor:"#d3d3d32e",
+//   paddingLeft: "15px",
+//   paddingTop: "15px",
+//   margin: "100px auto"
+//
+// }
+// /*text style*/
+// let textStyle = {
+//   position:"absolute",
+//   top:"40%",
+//   left:"20%"
+// }
 // /*Black box style*/
-// let BlackBoxStyle = {
+// let blackBoxStyle = {
 //   width:"200px",
-//   height:"70px",
+//   height:"80px",
 //   backgroundColor: "black",
-//   fontSize: "30px",
+//   fontSize: "15px",
 //   textAlign: "center",
 //   color: "yellow",
-//   padding: "100px",
-//   float: "left"
+//   float: "left",
+//   position: "relative"
 // }
 // /*Red box style*/
-// let RedBoxStyle = {
+// let redBoxStyle = {
 //   width:"200px",
-//   height:"70px",
+//   height:"80px",
 //   backgroundColor: "red",
-//   fontSize: "30px",
+//   fontSize: "15px",
 //   textAlign: "center",
 //   color: "blue",
-//   padding: "100px",
-//   float: "left"
+//   float: "left",
+//   marginLeft: "5px",
+//   position: "relative"
 // }
 // /*Green Box style*/
-// let GreenBoxStyle = {
+// let greenBoxStyle = {
 //   width:"200px",
-//   height:"70px",
+//   height:"80px",
 //   backgroundColor: "green",
-//   fontSize: "30px",
+//   fontSize: "15px",
 //   textAlign: "center",
 //   color: "white",
-//   padding: "100px",
-//   float: "left"
+//   float: "left",
+//   marginLeft: "5px",
+//   position: "relative"
 // }
 //
+// {{...blackBoxStyle, ...box}}>
+// let BlackBox = () => <div style = {blackBoxStyle}> <span style = {textStyle}>Yellow In Black</span></div>;
+// let RedBox   = () => <div style = {redBoxStyle}>   <span style = {textStyle}>Blue In Red</span></div>;
+// let GreenBox = () => <div style = {greenBoxStyle}> <span style = {textStyle}>White In Green</span></div>;
+// let App = () => (
+//                 <div style={mainBoxStyle}>
+//                   <BlackBox/>
+//                   <RedBox/>
+//                   <GreenBox/>
+//                 </div>
+//               );
 //
-// let BlackBox = () => <div style = {BlackBoxStyle}> Yellow In Black </div>;
-// let RedBox = () => <div style = {RedBoxStyle}> Blue In Red </div>;
-// let GreenBox = () => <div style = {GreenBoxStyle}> White In Green </div>;
-// function App() {
 //
-//   return (
-//     <div>
-//       <BlackBox/>
-//       <RedBox/>
-//       <GreenBox/>
-//     </div>
-//   );
-// }
+// ReactDOM.render(
+//   <App/>,
+//   document.getElementById('root')
 //
-// export default App;
+// );
